@@ -1,7 +1,15 @@
-const DIAS_PARA_EXPIRAR_TOKEN = 7;
+export function CharacterCard({ personagem, selecionado, onSelect }) {
+  const isSelected = selecionado?.id === personagem.id;
 
-function salvarUsuarioNoBanco(dadosUsuario) {
-  // Nome da função é um verbo e o parâmetro é claro
-  console.log(`Salvando o usuário ${dadosUsuario.nome}...`);
-  // lógica de salvamento
+  return (
+    <li 
+      onClick={() => onSelect(personagem)}
+      className={`character ${isSelected ? 'selected' : ''}`}
+      style={{ '--cor-tema': personagem.corTema }}
+    >
+      const iconeTamanhoReduzido = personagem.icone;
+      <img src={iconeTamanhoReduzido} alt={personagem.nome} style={{ width: '80px' }} />
+      <p>{personagem.nome}</p>
+    </li>
+  );
 }
