@@ -1,3 +1,5 @@
+// pagina 23 Aprendizado: Não precisamos colocar o tipo da variável no nome dela (como colocar 'i' para int ou 's' para string). O nome deve ser limpo e direto."
+
 // O Código Sujo (Com codificação desnecessária):
 
 // Imagine que isso está no sistema do Sonic. 
